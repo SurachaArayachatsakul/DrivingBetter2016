@@ -68,17 +68,22 @@ public class InformationActivity extends AppCompatActivity {
 
         //Split String
         String[] ACTStrings = ACTString.split("/");
-        for (int i=0;i<ACTStrings.length;i++) {
-            Log.d("car", "ACTString[" + Integer.toString(i) + "] = " + ACTStrings[i]);
-        }  //for
+        for (int i = 0; i < ACTStrings.length; i++) {
+            Log.d("car", "ACTStrings[" + Integer.toString(i) + "] = " + ACTStrings[i]);
+        }   //for
 
         //Increase Year
-        int intyear = Integer.parseInt(ACTStrings[2]);
-        intyear += 1;
+        int intYear = Integer.parseInt(ACTStrings[2]);
+        intYear += 1;
 
-        ACTnextString = ACTStrings[0] + "/" + ACTStrings[1] + "/" + Integer.toString(intyear);
+        ACTnextString = ACTStrings[0] + "/" + ACTStrings[1] + "/" + Integer.toString(intYear);
 
-        ACTnextTextView.setText(ACTString);
+        ACTnextTextView.setText(ACTnextString);
+
+        String[] taxStrings = taxString.split("/");
+        int intYearTax = Integer.parseInt(taxStrings[2]) + 1;
+        taxnextTextView.setText(taxStrings[0] + "/" + taxStrings[1] + "/" + Integer.toString(intYearTax));
+
 
     } //showView
 
