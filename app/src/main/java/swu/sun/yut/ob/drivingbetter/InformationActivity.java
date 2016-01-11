@@ -72,9 +72,13 @@ public class InformationActivity extends AppCompatActivity {
             Log.d("car", "ACTString[" + Integer.toString(i) + "] = " + ACTStrings[i]);
         }  //for
 
+        //Increase Year
+        int intyear = Integer.parseInt(ACTStrings[2]);
+        intyear += 1;
 
+        ACTnextString = ACTStrings[0] + "/" + ACTStrings[1] + "/" + Integer.toString(intyear);
 
-
+        ACTnextTextView.setText(ACTString);
 
     } //showView
 
