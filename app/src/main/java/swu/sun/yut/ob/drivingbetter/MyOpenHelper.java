@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class MyOpenHelper extends SQLiteOpenHelper{
     //Explicit
-    private static final String DATABASE_NAME_ = "car.db";
+    public static final String DATABASE_NAME_ = "car.db";
     private static final int DATABASE_VERSION = 1;
     private static final String CREATE_CAR_TABLE = "create table carTABLE (_id integer primary key," +
             "Id_Car text," +
