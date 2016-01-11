@@ -75,14 +75,25 @@ public class InformationActivity extends AppCompatActivity {
         //Increase Year
         int intYear = Integer.parseInt(ACTStrings[2]);
         intYear += 1;
-
         ACTnextString = ACTStrings[0] + "/" + ACTStrings[1] + "/" + Integer.toString(intYear);
-
         ACTnextTextView.setText(ACTnextString);
 
         String[] taxStrings = taxString.split("/");
         int intYearTax = Integer.parseInt(taxStrings[2]) + 1;
         taxnextTextView.setText(taxStrings[0] + "/" + taxStrings[1] + "/" + Integer.toString(intYearTax));
+
+        String[] insureStrings = insureString.split("/");
+        int intYearInsure = Integer.parseInt(insureStrings[2]) + 1;
+        insurenextTextView.setText(insureStrings[0] + "/" + insureStrings[1] + "/" + Integer.toString(intYearInsure));
+
+        String[] battStrings = battString.split("/");
+        int intYearBatt = Integer.parseInt(battStrings[2]) + 2;
+        battnextTextView.setText(battStrings[0] + "/" + battStrings[1] + "/" + Integer.toString(intYearBatt));
+
+        String[] tireStrings = tireString.split("/");
+        int intYearTire = Integer.parseInt(tireStrings[2]) + 2;
+        tirenextTextView.setText(tireStrings[0] + "/" + tireStrings[1] + "/" + Integer.toString(intYearTire));
+
 
 
     } //showView
